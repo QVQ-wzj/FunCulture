@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fun.culture.mapper.TCommentMapper">
+<mapper namespace="com.ram.funculture.mapper.TCommentMapper">
 
-    <resultMap id="BaseResultMap" type="com.fun.culture.entity.TComment">
+    <resultMap id="BaseResultMap" type="com.ram.funculture.entity.TComment">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="pid" column="pid" jdbcType="BIGINT"/>
             <result property="createdAt" column="created_at" jdbcType="TIMESTAMP"/>

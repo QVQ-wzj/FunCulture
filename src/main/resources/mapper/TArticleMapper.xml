@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fun.culture.mapper.TArticleMapper">
+<mapper namespace="com.ram.funculture.mapper.TArticleMapper">
 
-    <resultMap id="BaseResultMap" type="com.fun.culture.entity.TArticle">
+    <resultMap id="BaseResultMap" type="com.ram.funculture.entity.TArticle">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="createdAt" column="created_at" jdbcType="TIMESTAMP"/>
             <result property="updatedAt" column="updated_at" jdbcType="TIMESTAMP"/>
@@ -21,4 +21,7 @@
         deleted_at,part_id,title,
         cover_img_url,content,releaser_id
     </sql>
+    <select id="">
+        select  * from t_article
+    </select>
 </mapper>

@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fun.culture.mapper.TFriendsMapper">
+<mapper namespace="com.ram.funculture.mapper.TFriendsMapper">
 
-    <resultMap id="BaseResultMap" type="com.fun.culture.entity.TFriends">
+    <resultMap id="BaseResultMap" type="com.ram.funculture.entity.TFriends">
             <id property="friendId" column="friend_id" jdbcType="BIGINT"/>
             <id property="userId" column="user_id" jdbcType="BIGINT"/>
     </resultMap>
