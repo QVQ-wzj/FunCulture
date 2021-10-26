@@ -1,0 +1,31 @@
+server:
+  port: 5000
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://121.196.127.220/wydatabase?serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+    username: root
+    password: sqlpass
+#配置SQL日志
+mybatis-plus:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #默认日志
+  mapper-locations:  classpath:mapper/*Mapper.xml
+  global-config:
+    db-config:
+      logic-delete-field: flag  # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+
+#开发环境开启swagger页面访问
+#==============================knife4j配置=======================================
+knife4j:
+  # 开启增强配置
+  enable: true
+  basic:
+    enable: true
+    # Basic认证用户名
+    username: admin
+    # Basic认证密码
+    password: admin
+
+

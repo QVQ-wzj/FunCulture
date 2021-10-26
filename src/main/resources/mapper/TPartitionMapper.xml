@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fun.culture.mapper.TPartitionMapper">
+
+    <resultMap id="BaseResultMap" type="com.fun.culture.entity.TPartition">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="createdAt" column="created_at" jdbcType="TIMESTAMP"/>
+            <result property="updatedAt" column="updated_at" jdbcType="TIMESTAMP"/>
+            <result property="deletedAt" column="deleted_at" jdbcType="TIMESTAMP"/>
+            <result property="partTypeId" column="part_type_id" jdbcType="BIGINT"/>
+            <result property="partTitle" column="part_title" jdbcType="VARCHAR"/>
+            <result property="partDesc" column="part_desc" jdbcType="VARCHAR"/>
+            <result property="coverUrl" column="cover_url" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,created_at,updated_at,
+        deleted_at,part_type_id,part_title,
+        part_desc,cover_url
+    </sql>
+</mapper>

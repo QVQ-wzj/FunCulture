@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fun.culture.mapper.TBannerMapper">
+
+    <resultMap id="BaseResultMap" type="com.fun.culture.entity.TBanner">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="updatedAt" column="updated_at" jdbcType="TIMESTAMP"/>
+            <result property="deletedAt" column="deleted_at" jdbcType="TIMESTAMP"/>
+            <result property="createdAt" column="created_at" jdbcType="TIMESTAMP"/>
+            <result property="bannerTitle" column="banner_title" jdbcType="VARCHAR"/>
+            <result property="bannerUrl" column="banner_url" jdbcType="VARCHAR"/>
+            <result property="bannerImg" column="banner_img" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,updated_at,deleted_at,
+        created_at,banner_title,banner_url,
+        banner_img
+    </sql>
+</mapper>

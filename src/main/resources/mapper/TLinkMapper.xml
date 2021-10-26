@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fun.culture.mapper.TLinkMapper">
+
+    <resultMap id="BaseResultMap" type="com.fun.culture.entity.TLink">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="updatedAt" column="updated_at" jdbcType="TIMESTAMP"/>
+            <result property="createdAt" column="created_at" jdbcType="TIMESTAMP"/>
+            <result property="deletedAt" column="deleted_at" jdbcType="TIMESTAMP"/>
+            <result property="linkName" column="link_name" jdbcType="VARCHAR"/>
+            <result property="linkUrl" column="link_url" jdbcType="VARCHAR"/>
+            <result property="linkDesc" column="link_desc" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,updated_at,created_at,
+        deleted_at,link_name,link_url,
+        link_desc
+    </sql>
+</mapper>
